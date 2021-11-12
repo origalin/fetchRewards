@@ -1,0 +1,50 @@
+###
+POST http://127.0.0.1:8080/balance/gain
+Content-Type: application/json
+
+{
+  "payer": "a",
+  "point": 10,
+  "timestamp": 1
+}
+
+###
+POST http://127.0.0.1:8080/balance/gain
+Content-Type: application/json
+
+{
+  "payer": "b",
+  "point": 20,
+  "timestamp": 2
+}
+
+###
+POST http://127.0.0.1:8080/balance/gain
+Content-Type: application/json
+
+{
+  "payer": "c",
+  "point": 30,
+  "timestamp": 3
+}
+
+###
+POST http://127.0.0.1:8080/balance/gain
+Content-Type: application/json
+
+{
+  "payer": "a",
+  "point": -2,
+  "timestamp": 3
+}
+
+###
+POST http://127.0.0.1:8080/balance/spend
+Content-Type: application/json
+
+{
+  "points": 10
+}
+
+###
+GET http://127.0.0.1:8080/balance/show
